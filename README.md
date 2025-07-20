@@ -45,11 +45,36 @@ npm start
 
 The application will be available at `http://localhost:3000`
 
+## 🏗️ Component Architecture
+
+### Design Principles
+- **Atomic Design**: Components organized from atoms to organisms
+- **Reusability**: Shared components in `/components/ui`
+- **Modularity**: Feature-specific components in dedicated folders
+- **Type Safety**: Full TypeScript implementation with strict types
+
+### Structure
+```
+src/
+├── components/
+│   ├── ui/                 # shadcn/ui components
+│   ├── PageComponents/           # Page components (HeroSection, AnimatedSection, ContactSection, etc.)
+│   └── layout/             # Layout components
+├── lib/
+│   └── utils.ts           # Utility functions
+├── app/
+│   ├── globals.css        # Global styles
+│   └── page.tsx           # Main page component
+└── public/
+    └── assets/            # Static assets
+```
+
 ### Key Components
 - **AnimatedSection**: Scroll-triggered animations with viewport detection
 - **VehicleViews**: Interactive vehicle showcase with video controls
 - **VerticalStripe**: Dynamic progress indicator with smooth transitions
 - **ResponsiveView**: Mobile-optimized component variants
+& more...
 
 ## 📱 Responsive Design Strategy
 

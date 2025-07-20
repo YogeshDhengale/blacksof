@@ -9,6 +9,8 @@ import {
 } from "motion/react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { Button } from "./ui/button";
+import { LinkedinIcon } from "lucide-react";
 
 function FloatingNav() {
   const { scrollYProgress } = useScroll();
@@ -50,25 +52,33 @@ function FloatingNav() {
           duration: 0.5,
         }}
         className={cn(
-          "bg-background/50 border-black/.1 fixed inset-x-0 top-5 z-[5000] mx-auto flex w-[min(90%,700px)] items-center justify-between space-x-4 rounded-full border px-6 py-4 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] lg:top-12",
+          "bg-background border-black/.1 fixed inset-x-0 top-0 z-[5000] w-full border px-4 md:px-6 py-4 shadow",
         )}
         style={{
           backdropFilter: "blur(16px) saturate(180%)",
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
+        <div className="flex items-center justify-between gap-4 max-w-7xl mx-auto">
         <div>
           <Link href={"/"}>
             <Image
               src={"/logo.svg"}
-              width={28}
-              height={18}
+              width={146}
+              height={41}
               alt="logo"
+              className="h-full"
             />
           </Link>
         </div>
-        <div className="hidden items-center space-x-2 md:flex">
-          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+        <div className="items-center space-x-3 md:space-x-6 flex">
+          <Button className="rounded-full">
+            Contact Us
+          </Button>
+          <Button variant="ghost" size="icon" className="rounded-full" aria-label="linkedin">
+            <LinkedinIcon fill="currentColor" />
+          </Button>
+        </div>
         </div>
       </motion.div>
     </AnimatePresence>

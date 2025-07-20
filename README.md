@@ -4,7 +4,8 @@ A modern, performant frontend implementation of the Supreme Group website built 
 
 ## 🚀 Live Demo
 
-**Deployed URL**: [Your Vercel/Netlify URL here]
+**Deployed URL**: [blacksof-sigma.vercel.app](https://blacksof-sigma.vercel.app)
+
 
 ## 🛠️ Tech Stack
 

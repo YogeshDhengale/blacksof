@@ -1,6 +1,6 @@
 # Supreme Group Website
 
-A modern, performant frontend implementation of the Supreme Group website built with Next.js, featuring pixel-perfect design adherence, smooth animations, and comprehensive accessibility support.
+Blacksof assessment test
 
 ## 🚀 Live Demo
 

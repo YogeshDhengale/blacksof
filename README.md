@@ -136,7 +136,7 @@ src/
 
 ### Implementation Details
 - `aria-label` attributes for interactive elements
-- `alt` text for all meaningful images
+- `alt` text for all meaningful images and videos`
 - Semantic HTML5 elements (`<section>`, `<article>`, `<nav>`)
 - Keyboard event handlers alongside click handlers
 - Skip-to-content links for screen readers

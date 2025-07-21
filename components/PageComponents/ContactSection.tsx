@@ -8,7 +8,7 @@ const INPUT_CLASS = "bg-transparent text-base lg:text-lg px-0 placeholder:text-w
 
 const ContactSection = () => {
   return (
-    <div className="min-h-screen gap-16 sm:p-20 bg-sky-600 text-white">
+    <div className="min-h-screen gap-16 sm:p-20 bg-[#006abc] text-white">
       <div className="container mx-auto px-6 md:px-6 py-16">
         <div className="grid lg:grid-cols-2 gap-16 items-start max-w-6xl mx-auto">
           {/* Left side - Contact Information */}

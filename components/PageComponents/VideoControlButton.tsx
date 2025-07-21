@@ -12,6 +12,7 @@ const VideoControlButton = ({
     <button
       onClick={handleRestart}
       className="size-14 rounded-full border-2 border-border flex items-center justify-center cursor-pointer"
+      aria-label="Play"
     >
       <Pause className="text-white w-5 h-5 z-10" />
     </button>

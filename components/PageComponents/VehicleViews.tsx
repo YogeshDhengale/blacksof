@@ -69,7 +69,7 @@ const VehicleViews: React.FC<StickySectionProps> = ({
 }) => {
   const ref = useRef<HTMLVideoElement>(null!);
   const fillTopflag =
-    scrollPercent <= 95 ? true : scrollPercent > 95 ? false : true;
+    scrollPercent <= 90 ? true : scrollPercent > 90 ? false : true;
 
   const [carSrc, setCarSrc] = React.useState("/assets/Passenger.mp4");
   const [truckSrc, setTruckSrc] = React.useState("/assets/truck.mp4");

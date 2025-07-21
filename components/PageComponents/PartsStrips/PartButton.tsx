@@ -11,7 +11,7 @@ const PartButton = ({ src, label, onClick, active }: { src: string, label: strin
       )}
       onClick={onClick}
     >
-      <Image src={src} alt="label" width={90} height={70} className="max-h-14 object-contain" />
+      <Image src={src} alt="label" width={56} height={56} className="max-h-14 object-contain" />
       <span>{label}</span>
     </button>
   );

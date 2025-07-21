@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import FloatingNav from "@/components/floating-navbar";
+import { cn } from "@/lib/utils";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "blacksof assessment",
     images: [
       {
-        url: "/logo.svg",
+        url: "https://blacksof-sigma.vercel.app/web-app-manifest-192x192.png",
         width: 600,
         height: 300,
         alt: "blacksof"
@@ -52,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} antialiased`}
+        className={cn("antialiased", manrope.variable)}
       >
         <FloatingNav />
         {children}
